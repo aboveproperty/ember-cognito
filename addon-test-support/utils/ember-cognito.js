@@ -42,7 +42,7 @@ const MockUser = EmberObject.extend({
     return resolve(
       this.userAttributes.map(({ name, value }) => {
         return new CognitoUserAttribute({ Name: name, Value: value });
-      })
+      }),
     );
   },
 
@@ -51,7 +51,7 @@ const MockUser = EmberObject.extend({
       this.userAttributes.reduce((acc, { name, value }) => {
         acc[name] = value;
         return acc;
-      }, {})
+      }, {}),
     );
   },
 

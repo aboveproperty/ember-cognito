@@ -21,7 +21,7 @@ export function makeToken({
       iat,
       exp: iat + duration,
     },
-    extra
+    extra,
   );
   return `${header}.${btoa(JSON.stringify(payload))}`;
 }

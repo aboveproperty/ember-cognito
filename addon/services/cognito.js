@@ -32,7 +32,7 @@ export default class CognitoService extends Service {
         userPoolId: poolId,
         userPoolWebClientId: clientId,
       },
-      awsconfig
+      awsconfig,
     );
 
     this.auth.configure(params);

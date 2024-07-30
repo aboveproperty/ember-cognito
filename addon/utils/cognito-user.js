@@ -77,7 +77,7 @@ export default class CognitoUser extends EmberObject {
     return auth.verifyUserAttributeSubmit(
       user,
       attributeName,
-      confirmationCode
+      confirmationCode,
     );
   }
 
